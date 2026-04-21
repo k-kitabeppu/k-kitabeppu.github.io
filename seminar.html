@@ -1,186 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>学部生ゼミ活動 | 北別府 孝輔</title>
-  <meta name="description" content="北別府孝輔の学部生ゼミ活動ページ。文献検討、研究計画、発表指導、活動写真を掲載できます。" />
-  <style>
-    :root {
-      --bg: #f7f9fb;
-      --surface: #ffffff;
-      --text: #1f2937;
-      --muted: #5b6778;
-      --line: #d7dee7;
-      --accent: #123b5d;
-      --accent-soft: #eaf1f7;
-      --max: 1040px;
-      --radius: 18px;
-      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.8;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
-    header {
-      position: sticky; top: 0; z-index: 100;
-      backdrop-filter: blur(10px);
-      background: rgba(247, 249, 251, 0.9);
-      border-bottom: 1px solid rgba(215, 222, 231, 0.9);
-    }
-    .nav {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 16px; min-height: 72px;
-    }
-    .brand { font-weight: 700; color: var(--accent); letter-spacing: 0.02em; white-space: nowrap; }
-    nav ul { display: flex; flex-wrap: wrap; gap: 10px 18px; list-style: none; padding: 0; margin: 0; }
-    nav a { font-size: 0.95rem; color: var(--text); }
-    .hero { padding: 72px 0 24px; }
-    .hero-card, .card {
-      background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px;
-    }
-    .hero-card { margin-bottom: 22px; }
-    .eyebrow {
-      display: inline-block; margin-bottom: 12px; padding: 6px 12px; border-radius: 999px;
-      background: var(--accent-soft); color: var(--accent); font-size: 0.85rem; font-weight: 700;
-    }
-    h1, h2, h3 { line-height: 1.35; margin: 0 0 16px; }
-    h1 { font-size: clamp(2rem, 3vw, 3rem); }
-    h2 { font-size: clamp(1.4rem, 2vw, 2rem); margin-bottom: 20px; }
-    .lead, .section-intro, .small { color: var(--muted); }
-    .lead { font-size: 1.05rem; margin-bottom: 20px; }
-    main section { padding: 22px 0; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
-    .simple-list { margin: 0; padding-left: 1.2rem; }
-    .simple-list li { margin-bottom: 10px; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px;
-      border-radius: 999px; border: 1px solid var(--accent); color: var(--accent);
-      font-weight: 700; background: #fff;
-    }
-    .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-    .photo-box {
-      min-height: 260px; border: 1.5px dashed var(--line); border-radius: 16px;
-      display: flex; align-items: center; justify-content: center; text-align: center;
-      color: var(--muted); background: linear-gradient(135deg, #fafcff, #f2f6fb); padding: 24px;
-    }
-    .caption { margin-top: 10px; font-size: 0.95rem; color: var(--muted); }
-    .note { background: var(--accent-soft); border-radius: 14px; padding: 16px 18px; }
-    footer { padding: 40px 0 56px; color: var(--muted); font-size: 0.92rem; }
-    @media (max-width: 900px) {
-      .grid-2, .gallery-grid { grid-template-columns: 1fr; }
-      .nav { align-items: flex-start; padding: 14px 0; flex-direction: column; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education</title>
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f7f9fc;
+}
+header {
+  background: #1f3c88;
+  color: white;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">北別府 孝輔 | Kosuke Kitabeppu</div>
-      <nav aria-label="主要メニュー">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#profile">Profile</a></li>
-          <li><a href="index.html#research">Research</a></li>
-          <li><a href="index.html#publications">Publications</a></li>
-          <li><a href="index.html#activities">Activities</a></li>
-          <li><a href="seminar.html">Seminar</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-card">
-          <div class="eyebrow">Seminar</div>
-          <h1>学部生ゼミ活動</h1>
-          <p class="lead">文献検討、研究計画の立案、プレゼンテーション指導、臨床事例の検討を通じて、看護実践と研究の基盤を育てることを目指しています。</p>
-          <a class="button" href="index.html">トップページへ戻る</a>
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>Education</h1>
+</header>
 
-    <section>
-      <div class="container grid-2">
-        <div class="card">
-          <h2>ゼミの概要</h2>
-          <p class="section-intro">学部生ゼミでは、クリティカルケア看護を中心に、文献を読み解く力、問いを立てる力、根拠に基づいて考える力を育てることを重視しています。</p>
-          <ul class="simple-list">
-            <li>文献抄読とディスカッション</li>
-            <li>卒業研究に向けたテーマ探索</li>
-            <li>研究計画・発表資料の作成支援</li>
-            <li>臨床事例をもとにした思考訓練</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>主な活動内容</h2>
-          <ul class="simple-list">
-            <li>定期ゼミ</li>
-            <li>個別相談</li>
-            <li>抄読会</li>
-            <li>学会発表・研究発表の準備支援</li>
-            <li>プレゼンテーション練習</li>
-          </ul>
-          <div class="note" style="margin-top: 18px;">
-            ここには、年度ごとの活動内容、学生発表、研究テーマ一覧などを今後追加できます。
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="container">
 
-    <section>
-      <div class="container">
-        <div class="card">
-          <h2>活動写真</h2>
-          <p class="section-intro">以下は写真掲載用の枠です。画像ファイルを追加すれば、そのまま表示できます。</p>
-          <div class="gallery-grid">
-            <div>
-              <div class="photo-box">写真1を後日追加</div>
-              <div class="caption">例：ゼミ討議の様子</div>
-            </div>
-            <div>
-              <div class="photo-box">写真2を後日追加</div>
-              <div class="caption">例：発表練習や研究相談の様子</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="card">
+  <h2>学部ゼミ（卒業研究）</h2>
+  <p>
+  本ゼミでは、クリティカルケア看護を基盤として、
+  文献レビュー、研究計画立案、発表指導を行っています。
+  </p>
+</div>
 
-    <section>
-      <div class="container">
-        <div class="card">
-          <h2>写真の追加方法</h2>
-          <ol class="simple-list">
-            <li>画像ファイルを <strong>images</strong> フォルダにアップロードします。例：<code>images/seminar1.jpg</code></li>
-            <li>このページの写真枠を、次のような画像タグに置き換えます。</li>
-          </ol>
-<pre style="white-space: pre-wrap; overflow-wrap: anywhere; background: #f3f6fa; border: 1px solid var(--line); border-radius: 14px; padding: 16px;"><code>&lt;img src="images/seminar1.jpg" alt="ゼミ活動の様子" style="width:100%; border-radius:16px; display:block;"&gt;</code></pre>
-          <p class="small">ファイル名は英数字がおすすめです。日本語ファイル名は避ける方が安全です。</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="card">
+  <h2>活動例</h2>
+  <ul>
+    <li>文献抄読</li>
+    <li>研究計画作成</li>
+    <li>プレゼンテーション</li>
+  </ul>
+</div>
 
-  <footer>
-    <div class="container">
-      © <span id="year"></span> Kosuke Kitabeppu. All rights reserved.
-    </div>
-  </footer>
+<div class="card">
+  <a href="index.html">トップに戻る</a>
+</div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+</div>
+
 </body>
 </html>
