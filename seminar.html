@@ -1,236 +1,48 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education | 北別府 孝輔</title>
-  <meta name="description" content="北別府孝輔の教育活動、学部ゼミ、卒業研究指導について紹介するページです。" />
-  <style>
-    :root {
-      --bg: #f4f7fa;
-      --surface: #ffffff;
-      --text: #1e293b;
-      --muted: #5b6474;
-      --line: #d9e2ec;
-      --accent: #123d63;
-      --soft: #edf4fa;
-      --max: 1040px;
-      --radius: 22px;
-      --shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
-      color: var(--text);
-      background: linear-gradient(180deg, #f9fbfd 0%, var(--bg) 100%);
-      line-height: 1.9;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
-    header {
-      padding: 26px 0 18px;
-      border-bottom: 1px solid var(--line);
-      background: rgba(249,251,253,0.9);
-      backdrop-filter: blur(12px);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .brand { font-weight: 800; color: var(--accent); }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      background: #fff;
-      font-weight: 700;
-    }
-    main { padding: 44px 0 56px; }
-    .hero {
-      background: linear-gradient(135deg, rgba(255,255,255,0.94), rgba(239,246,251,0.88));
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-      padding: 34px;
-      margin-bottom: 24px;
-    }
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 14px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: var(--soft);
-      color: var(--accent);
-      font-size: 0.84rem;
-      font-weight: 800;
-    }
-    h1, h2, h3 { line-height: 1.35; margin: 0 0 16px; }
-    h1 { font-size: clamp(2rem, 3.5vw, 3rem); }
-    h2 { font-size: clamp(1.4rem, 2vw, 2rem); }
-    .lead { color: var(--muted); font-size: 1.05rem; max-width: 62ch; }
-    .grid-2, .grid-3 { display: grid; gap: 22px; }
-    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 26px;
-    }
-    .section { margin-top: 24px; }
-    .section-intro { color: var(--muted); margin: -6px 0 18px; }
-    ul { margin: 0; padding-left: 1.15rem; }
-    li { margin-bottom: 10px; }
-    .note {
-      border: 1px solid #d6e4ef;
-      background: linear-gradient(180deg, #f8fbfe, #eef5fa);
-      border-radius: 18px;
-      padding: 18px;
-      color: var(--text);
-    }
-    .placeholder {
-      min-height: 220px;
-      border: 1.5px dashed #bfd0df;
-      border-radius: 20px;
-      background: #f9fbfd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: var(--muted);
-      padding: 20px;
-    }
-    footer {
-      padding-top: 10px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-    @media (max-width: 860px) {
-      .grid-2, .grid-3 { grid-template-columns: 1fr; }
-      .hero, .card { padding: 22px; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container topbar">
-      <div class="brand">Education | 北別府 孝輔</div>
-      <a class="button" href="index.html">トップページへ戻る</a>
-    </div>
-  </header>
+<div class="container">
 
-  <main>
-    <div class="container">
-      <section class="hero">
-        <div class="eyebrow">Education</div>
-        <h1>教育活動</h1>
-        <p class="lead">
-          学部ゼミ、卒業研究指導、文献抄読、研究計画立案支援、プレゼンテーション指導などを通して、
-          学生が臨床と研究をつなげて考えられるよう支援しています。
-        </p>
-      </section>
+<!-- ゼミ概要 -->
+<div class="card">
+  <h2>教育内容</h2>
+  <p>
+  本ゼミでは、クリティカルケア看護を基盤として、
+  文献レビュー、研究計画立案、プレゼンテーション指導を行い、
+  卒業研究の完成を目指します。
+  </p>
+</div>
 
-      <section class="section">
-        <div class="grid-2">
-          <div class="card">
-            <h2>学部ゼミ</h2>
-            <p class="section-intro">文献を読む力、問いを立てる力、考察する力を段階的に育てることを重視しています。</p>
-            <ul>
-              <li>文献抄読</li>
-              <li>研究テーマの検討</li>
-              <li>先行研究レビュー</li>
-              <li>看護実践との接続を意識したディスカッション</li>
-            </ul>
-          </div>
+<!-- ゼミテーマ -->
+<div class="card">
+  <h2>学部ゼミ生のテーマ</h2>
 
-          <div class="card">
-            <h2>卒業研究指導</h2>
-            <p class="section-intro">研究計画の立案から発表準備まで、各段階に応じて支援します。</p>
-            <ul>
-              <li>研究目的・研究課題の整理</li>
-              <li>研究方法の検討</li>
-              <li>倫理的配慮の確認</li>
-              <li>プレゼンテーション資料作成支援</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <p>
+  家村琴, 後藤香花（2024）：高度救命救急センターに配属された新人看護師のステップアップに対する入職前後の認識の違い  
+  ➡ 第21回日本クリティカルケア看護学会学術集会（口頭発表）
+  </p>
 
-      <section class="section">
-        <div class="grid-3">
-          <div class="card">
-            <h3>重視していること</h3>
-            <ul>
-              <li>臨床につながる問いを立てること</li>
-              <li>文献を根拠として考えること</li>
-              <li>自分の言葉で説明できること</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>ゼミで扱う内容</h3>
-            <ul>
-              <li>クリティカルケア看護</li>
-              <li>臨床判断</li>
-              <li>教育・人材育成</li>
-              <li>コンピテンシー</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>学習支援</h3>
-            <ul>
-              <li>個別フィードバック</li>
-              <li>発表練習</li>
-              <li>文章構成支援</li>
-              <li>段階的な課題設定</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <p>
+  村田響紀, 沖田和花葉（2025）：集中治療の経験をもつ看護師が一般病棟で活用する能力や経験の実際
+  </p>
 
-      <section class="section">
-        <div class="grid-2">
-          <div class="card">
-            <h2>教育方針</h2>
-            <p>
-              学生が知識を覚えるだけでなく、臨床実践の現場で起きていることを根拠に基づいて考え、
-              研究的に捉え、他者へ伝えられるようになることを目指しています。
-            </p>
-            <div class="note" style="margin-top:16px;">
-              必要に応じて、ここに年度ごとのゼミテーマや卒業研究テーマ一覧を追加できます。
-            </div>
-          </div>
-          <div class="card">
-            <h2>写真・活動記録</h2>
-            <div class="placeholder">
-              今後ここにゼミ風景、発表会、卒業研究関連の写真や記録を掲載できます。<br />
-              画像を追加したい場合は、画像ファイルをアップロードしてこの枠を差し替えます。
-            </div>
-          </div>
-        </div>
-      </section>
+</div>
 
-      <footer>
-        © <span id="year"></span> Kosuke Kitabeppu
-      </footer>
-    </div>
-  </main>
+<!-- 活動記録 -->
+<div class="card">
+  <h2>活動記録</h2>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <h3>2025年</h3>
+  <img src="images/seminar_2025.jpg" width="280">
+
+  <h3>2024年</h3>
+  <img src="images/seminar_2024.jpg" width="280">
+
+</div>
+
+<!-- 戻る -->
+<div class="card">
+  <a href="index.html">トップページに戻る</a>
+</div>
+
+</div>
+
 </body>
 </html>
