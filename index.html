@@ -1,499 +1,116 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>北別府 孝輔 | 岡山大学 保健学研究科 臨床応用看護学領域</title>
-  <meta name="description" content="北別府孝輔の研究者ホームページ。クリティカルケア看護、コンピテンシー、特定行為看護を中心とした研究・教育・業績を紹介します。" />
-  <style>
-    :root {
-      --bg: #f7f9fb;
-      --surface: #ffffff;
-      --text: #1f2937;
-      --muted: #5b6778;
-      --line: #d7dee7;
-      --accent: #123b5d;
-      --accent-soft: #eaf1f7;
-      --max: 1040px;
-      --radius: 18px;
-      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北別府 孝輔 | 研究者サイト</title>
 
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.8;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    .container {
-      width: min(calc(100% - 32px), var(--max));
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(10px);
-      background: rgba(247, 249, 251, 0.9);
-      border-bottom: 1px solid rgba(215, 222, 231, 0.9);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      min-height: 72px;
-    }
-
-    .brand {
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: 0.02em;
-      white-space: nowrap;
-    }
-
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav a {
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .hero {
-      padding: 72px 0 36px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 12px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.85rem;
-      font-weight: 700;
-    }
-
-    h1, h2, h3 {
-      line-height: 1.35;
-      margin: 0 0 16px;
-    }
-
-    h1 { font-size: clamp(2rem, 3vw, 3rem); }
-    h2 { font-size: clamp(1.4rem, 2vw, 2rem); margin-bottom: 20px; }
-    h3 { font-size: 1.1rem; }
-
-    .lead {
-      font-size: 1.05rem;
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    .subtitle {
-      font-size: 1.05rem;
-      color: var(--accent);
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    .meta-list,
-    .simple-list,
-    .timeline,
-    .publication-list {
-      margin: 0;
-      padding-left: 1.2rem;
-    }
-
-    .meta-list li,
-    .simple-list li,
-    .timeline li,
-    .publication-list li { margin-bottom: 10px; }
-
-    .quick-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 22px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      font-weight: 700;
-      background: #fff;
-    }
-
-    .button.primary {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    main section {
-      padding: 22px 0;
-    }
-
-    .section-intro {
-      max-width: 760px;
-      color: var(--muted);
-      margin-bottom: 22px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .label {
-      display: block;
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: var(--muted);
-      margin-bottom: 6px;
-      text-transform: uppercase;
-    }
-
-    .value {
-      font-size: 1rem;
-    }
-
-    .placeholder-photo {
-      min-height: 320px;
-      border: 1.5px dashed var(--line);
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      background: linear-gradient(135deg, #fafcff, #f2f6fb);
-      text-align: center;
-      padding: 24px;
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .tag-list li {
-      padding: 8px 12px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border-radius: 999px;
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
-    footer {
-      padding: 40px 0 56px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 900px) {
-      .hero-grid,
-      .grid-2,
-      .grid-3 {
-        grid-template-columns: 1fr;
-      }
-
-      .nav {
-        align-items: flex-start;
-        padding: 14px 0;
-        flex-direction: column;
-      }
-    }
-  </style>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f7f9fc;
+  color: #333;
+}
+header {
+  background: #1f3c88;
+  color: white;
+  padding: 20px;
+}
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.profile img {
+  width: 150px;
+  border-radius: 10px;
+}
+h1, h2 {
+  margin-top: 0;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">北別府 孝輔 | Kosuke Kitabeppu</div>
-      <nav aria-label="主要メニュー">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="seminar.html">Seminar</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="card">
-          <div class="eyebrow">Researcher Website</div>
-          <h1>北別府 孝輔</h1>
-          <div class="subtitle">Kosuke Kitabeppu</div>
-          <p class="lead">岡山大学 保健学研究科 臨床応用看護学領域 助教</p>
-          <p>
-            クリティカルケア看護を基盤に、急性・重症患者看護専門看護師の役割開発および特定行為研修修了生のコンピテンシー開発を中心に研究しています。臨床・教育・研究を横断した実践により、看護の専門性の可視化と質向上に取り組んでいます。
-          </p>
-          <div class="quick-links">
-            <a class="button primary" href="#research">研究内容を見る</a>
-            <a class="button" href="#publications">業績を見る</a>
-            <a class="button" href="seminar.html">ゼミ活動</a>
-            <a class="button" href="#contact">連絡先</a>
-          </div>
-        </div>
-        <div class="card">
-          <h2>研究分野</h2>
-          <ul class="tag-list" aria-label="研究分野">
-            <li>クリティカルケア看護</li>
-            <li>コンピテンシー</li>
-            <li>特定行為看護</li>
-            <li>専門看護師</li>
-          </ul>
-          <h3 style="margin-top: 26px;">主な研究テーマ</h3>
-          <ul class="simple-list">
-            <li>急性・重症患者看護専門看護師の役割開発</li>
-            <li>タスクシェアにおける特定行為研修修了生のコンピテンシー開発</li>
-          </ul>
-          <h3 style="margin-top: 26px;">関連リンク</h3>
-          <ul class="simple-list">
-            <li><a href="https://researchmap.jp/k-kitabeppu" target="_blank" rel="noopener noreferrer">researchmap</a></li>
-            <li><a href="https://soran.cc.okayama-u.ac.jp/html/f5c5f5b65f24e484324722b072e43b5d_ja.html" target="_blank" rel="noopener noreferrer">岡山大学研究者総覧</a></li>
-            <li><a href="https://scholar.google.com/citations?hl=ja&user=9lcoNPwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>北別府 孝輔</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="seminar.html">Education</a>
+  </nav>
+</header>
 
-    <section id="profile">
-      <div class="container">
-        <h2>Profile</h2>
-        <p class="section-intro">
-          臨床と大学教育の両方の場で活動しながら、クリティカルケア看護に関する研究と教育に取り組んでいます。
-        </p>
-        <div class="grid-2">
-          <div class="card">
-            <h3>基本情報</h3>
-            <p><span class="label">氏名</span><span class="value">北別府 孝輔 / Kosuke Kitabeppu</span></p>
-            <p><span class="label">所属</span><span class="value">岡山大学 保健学研究科 臨床応用看護学領域 助教 / 倉敷中央病院 非常勤</span></p>
-            <p><span class="label">職位</span><span class="value">助教</span></p>
-            <p><span class="label">連絡先</span><span class="value"><a href="mailto:k-kitabeppu@okayama-u.ac.jp">k-kitabeppu@okayama-u.ac.jp</a></span></p>
+<div class="container">
 
-            <h3 style="margin-top: 28px;">略歴</h3>
-            <ul class="timeline">
-              <li>平成17年より倉敷中央病院に入職。集中治療部門で臨床経験を重ねる。</li>
-              <li>平成23年、大阪府立大学看護学研究科急性看護学分野 博士前期課程に進学。</li>
-              <li>平成25年、同大学 博士前期課程を修了。同年に急性重症患者看護専門看護師資格を取得。</li>
-              <li>その後、集中治療室に軸を置きながら病院横断的に活動。</li>
-              <li>平成30年、特定行為研修を履修・修了し、看護実践に活用。</li>
-              <li>令和4年10月より倉敷中央病院で非常勤として臨床実践を継続しつつ、岡山大学に着任し、研究・教育活動を行っている。</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>資格・所属学会</h3>
-            <ul class="simple-list">
-              <li>急性重症患者看護専門看護師</li>
-              <li>特定行為研修修了</li>
-              <li>日本クリティカルケア看護学会</li>
-              <li>日本循環器看護学会</li>
-              <li>日本集中治療医学会</li>
-              <li>日本看護科学学会</li>
-            </ul>
+<div class="card profile">
+  <img src="profile_photo.png">
+  <div>
+    <h2>Kosuke Kitabeppu</h2>
+    <p>岡山大学 保健学研究科 臨床応用看護学領域 助教</p>
+    <p>クリティカルケア看護 / コンピテンシー</p>
+  </div>
+</div>
 
-            <h3 style="margin-top: 28px;">写真</h3>
-            <div class="placeholder-photo">
-              <div>
-                <strong>写真掲載予定</strong><br />
-                後日、研究者プロフィール写真を追加
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="card">
+  <h2>Research</h2>
+  <ul>
+    <li>特定行為研修修了生のコンピテンシー開発</li>
+    <li>臨床看護師のコンピテンシー</li>
+  </ul>
 
-    <section id="research">
-      <div class="container">
-        <h2>Research</h2>
-        <p class="section-intro">
-          クリティカルケア領域における看護実践の質向上を目的として、コンピテンシー開発および高度実践看護の役割に関する研究を行っています。
-        </p>
-        <div class="grid-2">
-          <article class="card">
-            <h3>急性・重症患者看護専門看護師の役割開発</h3>
-            <p>
-              急性期および重症患者のケアにおいて、専門看護師が果たす役割の構造化と可視化を目的としています。臨床実践に基づいた役割分析を通じて、多職種連携の中での専門性の明確化を目指します。
-            </p>
-            <ul class="simple-list">
-              <li>高度実践看護の役割</li>
-              <li>患者・家族支援</li>
-              <li>臨床判断と意思決定</li>
-              <li>チーム医療における機能</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>特定行為研修修了生のコンピテンシー開発</h3>
-            <p>
-              特定行為研修修了者の実践能力を明確化し、教育・評価・制度設計に資するコンピテンシーモデルの構築を行っています。看護における役割拡張の実際を踏まえ、教育プログラムや評価指標の開発につなげます。
-            </p>
-            <ul class="simple-list">
-              <li>タスクシェア・タスクシフト</li>
-              <li>実践能力の構造化</li>
-              <li>教育プログラム開発</li>
-              <li>評価指標の開発</li>
-            </ul>
-          </article>
-        </div>
+  <h3>キーワード</h3>
+  <p>Critical Care Nursing / Competency / Specified Medical Acts</p>
+</div>
 
-        <div class="card" style="margin-top: 22px;">
-          <h3>研究キーワード</h3>
-          <ul class="tag-list">
-            <li>Critical Care Nursing</li>
-            <li>Competency</li>
-            <li>Specified Medical Acts</li>
-            <li>CNS</li>
-            <li>ICU</li>
-            <li>Mechanical Ventilation</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<div class="card">
+  <h2>Publications</h2>
 
-    <section id="publications">
-      <div class="container">
-        <h2>Publications</h2>
-        <p class="section-intro">
-          主な論文・著書を掲載しています。詳細な全業績は researchmap および Google Scholar からご覧ください。
-        </p>
-        <div class="grid-2">
-          <div class="card">
-            <h3>代表業績</h3>
-            <ul class="publication-list">
-              <li>佐野 基裕, 関口 涼子, 伊藤 智子, 北別府 孝輔, 高田 鼓, 高岡 将治. 心不全患者に対する看護実践を行う看護師のコンピテンシーに関する研究（2026）</li>
-              <li>北別府 孝輔, 桶部 良, 管 裕信, 増田 隆男, 正岡 由記. 人工呼吸管理・VV-ECMO患者に関わる看護師のコンピテンシーモデル開発（2022）</li>
-              <li>北別府 孝輔, 桶部 良, 管 裕信, 増田 隆男, 正岡 由記. 臨床OJTにおける指導者コンピテンシーに関する研究（2021）</li>
-              <li>北別府 孝輔, 渋江 明美. 集中治療室再入室患者のリスク因子に関する研究（2017）</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>著書・分担執筆</h3>
-            <ul class="publication-list">
-              <li>『救急・ICUで「終末期ケアを実践する」ということ』（2025）</li>
-              <li>『クリティカルケア領域でアセスメント力を伸ばす先輩ナースの質問力』（2025）</li>
-              <li>『急性期ICU救急の輸液』（2023）</li>
-              <li>『Pocket人工呼吸器』（2022）</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card" style="margin-top: 22px;">
-          <h3>外部リンク</h3>
-          <ul class="simple-list">
-            <li><a href="https://researchmap.jp/k-kitabeppu" target="_blank" rel="noopener noreferrer">researchmap</a></li>
-            <li><a href="https://soran.cc.okayama-u.ac.jp/html/f5c5f5b65f24e484324722b072e43b5d_ja.html" target="_blank" rel="noopener noreferrer">岡山大学研究者総覧</a></li>
-            <li><a href="https://scholar.google.com/citations?hl=ja&user=9lcoNPwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <p>
+  佐野 元洋, 関口 亮子, 伊東 由康, 北別府 孝輔, 他.  
+  心不全患者への看護を実践する看護師のコンピテンシーに関する文献検討.  
+  日本循環器看護学会誌 2026.
+  </p>
 
-    <section id="activities">
-      <div class="container">
-        <h2>Activities</h2>
-        <p class="section-intro">
-          学会活動および委員会活動を掲載しています。必要に応じて今後、講演、教育活動、社会貢献活動を追加できます。
-        </p>
-        <div class="grid-2">
-          <div class="card">
-            <h3>学会活動・委員会</h3>
-            <ul class="simple-list">
-              <li>日本クリティカルケア看護学会 将来構想委員会担当理事</li>
-              <li>日本クリティカルケア看護学会 社員</li>
-              <li>日本循環器看護学会 学術委員会委員</li>
-              <li>日本集中治療医学会 評議員</li>
-              <li>日本集中治療医学会 中国・四国支部運営委員</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>社会貢献</h3>
-            <p class="small">今後掲載予定</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <p>
+  栗原 知己, 立野 淳子, 他, 北別府 孝輔.  
+  人工呼吸器ならびにVV-ECMO患者のコンピテンシー調査.  
+  日本クリティカルケア看護学会誌 2022.
+  </p>
 
-    <section id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="grid-2">
-          <div class="card">
-            <p><span class="label">所属</span><span class="value">岡山大学 保健学研究科 臨床応用看護学領域 助教</span></p>
-            <p><span class="label">連絡先</span><span class="value"><a href="mailto:k-kitabeppu@okayama-u.ac.jp">k-kitabeppu@okayama-u.ac.jp</a></span></p>
-          </div>
-          <div class="card">
-            <h3>外部リンク</h3>
-            <ul class="simple-list">
-              <li><a href="https://researchmap.jp/k-kitabeppu" target="_blank" rel="noopener noreferrer">researchmap</a></li>
-              <li><a href="https://soran.cc.okayama-u.ac.jp/html/f5c5f5b65f24e484324722b072e43b5d_ja.html" target="_blank" rel="noopener noreferrer">岡山大学研究者総覧</a></li>
-              <li><a href="https://scholar.google.com/citations?hl=ja&user=9lcoNPwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+</div>
+
+<div class="card">
+  <h2>Books</h2>
+  <p>救急・ICUで「終末期ケアを実践する」ということ（分担執筆）2025</p>
+  <p>急性期ICU救急の輸液（単著）2023</p>
+</div>
+
+<div class="card">
+  <h2>Contact</h2>
+  <p>Email: k-kitabeppu@okayama-u.ac.jp</p>
+</div>
+
+</div>
+
+</body>
+</html>
