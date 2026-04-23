@@ -1,15 +1,200 @@
-<section class="card">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education | 北別府孝輔</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN",
+        "Yu Gothic", sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #1f3c88;
+      color: #ffffff;
+      padding: 24px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .header-inner {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    .header-title {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 18px;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 32px auto 48px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.6rem;
+      color: #14274e;
+    }
+
+    h3 {
+      margin: 0 0 14px;
+      font-size: 1.2rem;
+      color: #223a70;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .theme-item {
+      margin-bottom: 18px;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    .photos-group {
+      margin-top: 16px;
+    }
+
+    .photo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .photo-item {
+      flex: 0 1 420px;
+    }
+
+    .photo-item.single {
+      flex-basis: 420px;
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.10);
+    }
+
+    .back-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #1f3c88;
+      font-weight: 700;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 22px;
+      }
+
+      .header-title {
+        font-size: 1.7rem;
+      }
+
+      .photo-item,
+      .photo-item.single {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="header-title">Education</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>教育内容</h2>
+      <p>
+        本ゼミでは、クリティカルケア看護を基盤として、文献レビュー、研究計画立案、
+        プレゼンテーション指導を通して、卒業研究の遂行を支援しています。
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>学部ゼミ生のテーマ</h2>
+
+      <div class="theme-item">
+        家村琴, 後藤香花（2024）：高度救命救急センターに配属された新人看護師のステップアップに対する入職前後の認識の違い
+        ➡ 第21回日本クリティカルケア看護学会学術集会（口頭発表）
+      </div>
+
+      <div class="theme-item">
+        村田響紀, 沖田和花葉（2025）：集中治療の経験をもつ看護師が一般病棟で活用する能力や経験の実際
+      </div>
+    </section>
+
+    <section class="card">
       <h2>活動記録</h2>
 
-      <div class="activity-year">2025年</div>
-      <p class="activity-note">
-        卒業研究指導および研究発表支援を実施。
-      </p>
+      <div class="photos-group">
+        <h3>2025年</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/seminar_2025_1.jpg" alt="2025年の活動写真1">
+          </div>
+          <div class="photo-item">
+            <img src="images/seminar_2025_2.jpg" alt="2025年の活動写真2">
+          </div>
+        </div>
+      </div>
 
-      <div class="activity-year">2024年</div>
-      <p class="activity-note">
-        卒業研究指導および学会発表支援を実施。
-      </p>
+      <div class="photos-group">
+        <h3>2024年</h3>
+        <div class="photo-grid">
+          <div class="photo-item single">
+            <img src="images/seminar_2024.jpg" alt="2024年の活動写真">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="card">
